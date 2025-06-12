@@ -1,1 +1,45 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Tôi</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <h1>Chào Mừng Bạn Đến Với Trang Web Của Tôi</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#services">Dịch Vụ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Trang Chủ</h2>
+            <p>Đây là nội dung của trang chủ.</p>
+        </section>
+
+        <section id="about">
+            <h2>Giới Thiệu</h2>
+            <p>Thông tin về chúng tôi.</p>
+        </section>
+
+        <section id="services">
+            <h2>Dịch Vụ</h2>
+            <p>Danh sách dịch vụ chúng tôi cung cấp.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Trang Web Của Tôi</p>
+    </footer>
+
+</body>
+</html>
