@@ -1,0 +1,49 @@
+/* Mặc định: Chế độ xem di động */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.item {
+    width: 90%; /* Chiếm 90% chiều rộng màn hình */
+    margin: 10px 0;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Truy vấn phương tiện cho chế độ xem máy tính bảng (Kích thước màn hình > 772px) */
+@media (min-width: 772px) {
+    .container {
+        flex-direction: row; /* Chuyển sang chế độ hàng ngang */
+        flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ chỗ */
+        justify-content: space-around;
+    }
+
+    .item {
+        width: 45%; /* Mỗi div chiếm 45% chiều rộng */
+    }
+
+    .item img {
+        height: 30vh; /* Hạn chế chiều cao của hình ảnh là 30% chiều cao khung nhìn */
+        object-fit: cover; /* Giữ tỷ lệ hình ảnh */
+    }
+}
+
+/* Truy vấn phương tiện cho chế độ xem màn hình lớn (Kích thước màn hình > 998px) */
+@media (min-width: 998px) {
+    .item {
+        width: 30%; /* Mỗi div chiếm 30% chiều rộng */
+    }
+}
